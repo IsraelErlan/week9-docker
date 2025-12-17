@@ -35,12 +35,18 @@ docker run -it --rm -p 8000:8000 -v fastapi-db:/app/db shopping-server1:v1
 ### Build the image
 
 ```bash
-
+docker build -t shopping-server2:v1 .
 ```
 
 ### Run the container
 
 ```bash
+docker run -it --rm -p 8000:8000 -v fastapi-db:/app/db shopping-server2:v1
+```
 
+
+#### after bonus
+```bash
+docker run -it --rm -p 8000:8000 -v fastapi-db:/app/db  -v ./data:/app/data shopping-server2:v1
 ```
 
