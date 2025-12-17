@@ -21,7 +21,7 @@ docker volume create fastapi-db
 ### Build the image
 
 ```bash
-docker build -t shopping-server1:v1 .
+docker build -t shopping-server2:v1 "%cd%"\server1
 ```
 
 ### Run the container
@@ -35,7 +35,7 @@ docker run -it --rm -p 8000:8000 -v fastapi-db:/app/db shopping-server1:v1
 ### Build the image
 
 ```bash
-docker build -t shopping-server2:v1 .
+docker build -t shopping-server2:v1 "%cd%"\server2
 ```
 
 ### Run the container
