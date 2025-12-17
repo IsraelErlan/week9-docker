@@ -19,5 +19,5 @@ ENV/
 .pytest_cache
 .coverage
 htmlcov/
-data/*.json
-data/*.db
+db/*.json
+db/*.db
